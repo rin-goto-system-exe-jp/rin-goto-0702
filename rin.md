@@ -5,9 +5,11 @@
 - 箇条書き
 - 箇条書き
 
+- ドラえもんの家族
+    - 妹：ドラミちゃん
+        - ドラえもんの妹であり、とても賢くしっかり者です。
+    - 父・母（詳細な名前や描写は少ないものの、公式設定で存在しています）
+
 ```java
 Hello
 ```
-
-git config --global user.name "Rin Goto"
-git config --global user.email "rin.goto@system-exe.jp"
