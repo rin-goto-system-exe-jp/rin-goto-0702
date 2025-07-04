@@ -195,3 +195,7 @@ coverage/
 # Temporary folders
 tmp/
 temp/
+
+# Node modules
+node_modules/
+cd-shop/node_modules/
