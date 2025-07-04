@@ -4,10 +4,8 @@ import Link from 'next/link'
 import { useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { useShoppingCart } from '@/components/ShoppingCart'
 
 export default function ProductsPage() {
-  const { addToCart } = useShoppingCart()
   const [searchQuery, setSearchQuery] = useState('')
   const [selectedGenre, setSelectedGenre] = useState('')
 
@@ -124,14 +122,14 @@ export default function ProductsPage() {
                     <p className="text-gray-600 mb-3">{product.artist}</p>
                     <p className="text-2xl font-bold text-pink-600 mb-4">¥{product.price.toLocaleString()}</p>
                     <div className="space-y-2">
-                      <Link
-                        href={`/products/${product.id}`}
+                      <button
+                        onClick={() => alert(`${product.title}の詳細ページは準備中です 🚧`)}
                         className="block w-full text-center bg-gradient-to-r from-blue-400 to-purple-500 text-white py-3 rounded-2xl hover:from-blue-500 hover:to-purple-600 transition-all duration-300 transform hover:scale-105 shadow-md font-semibold"
                       >
                         👀 詳細を見る
-                      </Link>
+                      </button>
                       <button
-                        onClick={() => addToCart(product)}
+                        onClick={() => alert(`${product.title}をカートに追加しました！ 🛒✨`)}
                         className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-3 rounded-2xl hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-md font-semibold"
                       >
                         🛒 カートに追加
